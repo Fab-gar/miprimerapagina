@@ -1,38 +1,5 @@
 /* estilo.css */
 
-.container-nav {
-  background-color: #333;
-  padding: 10px 0;
-  color: #fff;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.brand {
-  color: #000000;
-  font-size: 30px;
-  text-decoration: none;
-}
-
-.nav-links {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-.nav-links li {
-  margin-left: 10px;
-}
-
-.nav-links li a {
-  color: #faeeee;
-  text-decoration: none;
-}
 
 .button-menu-toggle {
   display: none;
@@ -126,56 +93,6 @@ button {
   color: #332f2f;
 }
 
-/* Estilos responsivos */
-
-@media (max-width: 1282px) {
-  div {
-    background-color: #ffffff;
-  }
-
-  nav {
-    font-size: 16px;
-  }
-
-  .imagen {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .column {
-    flex: 100%;
-  }
-
-  .nav-links {
-    display: none;
-  }
-
-  .button-menu-toggle {
-    display: block;
-    background-color: rgb(241, 232, 232);
-    border: none;
-    border-radius: 50px;
-    padding: 0 24px;
-    font-family: monospace;
-    font-weight: bold;
-    font-size: 20px;
-  }
-
-  .nav-links-responsive {
-    position: absolute;
-    display: flex;
-    background-color: rgba(16, 43, 14, 0.95);
-    width: 100%;
-    height: 100%;
-    top: 70px;
-    left: 0;
-    flex-direction: column;
-    padding-top: 200px;
-    align-items: center;
-    gap: 70px;
-    font-size: 40px;
-  }
-}
 
 /* Estilos para las imágenes responsivas */
 
@@ -197,3 +114,79 @@ button {
     max-width: calc(50% - 20px);
   }
 }
+
+/* Estilos para dispositivos móviles */
+
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+  }
+
+  .button-menu-toggle {
+    display: block;
+  }
+}
+
+/* Estilos para el botón de menú */
+
+.button-menu-toggle {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Estilos para los enlaces de navegación */
+
+.nav-links li {
+  margin-left: 10px;
+}
+
+.nav-links li a {
+  color: #faeeee;
+  text-decoration: none;
+}
+
+/* Estilos adicionales para mejorar la apariencia */
+
+.container-nav {
+  background-color: #333;
+  padding: 10px 0;
+  color: #fff;
+}
+
+.brand {
+  color: #000000;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
