@@ -2,7 +2,8 @@
   background-color: #33649d;
  }
  main.container h5{
-  font-size: 40px;
+  display: flex;
+  font-size: 3rem;
  }
  .container-nav {
     background-color: #333;
